@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Bahari Dishes - Amazing & Delicious Food</title>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Bahari Dishes</p>
+  </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+
+  <header class="header" data-header>
+    
+    <div class="container">
+      
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </l>
+
+        </ul>
+
+
+
+      </nav>
+
+      <button onclick="openPopup()" class="get text-center">
+        <span class="text text-1">Get started</span>
+        
+      </button>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+
+    <!--
+      - #SIGN UP/LOGIN
+    -->
+
+    <div class="getstarted" id="popup">
+      
+
+
+        <!----------------------------- FORM BOX ----------------------------------->    
+          <div class="register">
+            
+            <button class="close2-btn" aria-label="Close">
+              <span class="close2-icon" >X</span>
+            </button>
+            
+              <div class="form-box">
+                
+                                                                     
+                    <!------------------- LOGIN FORM -------------------------->
+            
+                    <div class="login-container" id="login">
+                      <div class="welcome">
+                          <span>Log In To Bahari Dishes</span>
+                      </div>
+                      <div class="top">
+                          <span>New to Bahari Dishes? <a class="hover-underline" href="#" onclick="register()">Sign Up</a></span>
+                      </div>
+                      <form action="connect.php" method="POST">
+                          <div class="input-box">
+                              <input type="text" class="input-field" placeholder="Username" name="username">
+                              <i class="bx bx-user"></i>
+                          </div>
+                          <div class="input-box">
+                              <input type="password" class="input-field" placeholder="Password" name="password">
+                              <i class="bx bx-lock-alt"></i>
+                          </div>
+                          <div class="input-box">
+                              <input type="submit" class="submit get" value="Sign In" name="login">
+                          </div>
+                          <div class="two-col">
+                              <div class="hover-underline">
+                                  <label><a href="#">Forgot password?</a></label>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  
+            
+                    <!------------------- REGISTRATION FORM -------------------------->
+                    <div class="register-container" id="register">
+                      
+                        <div class="welcome">
+                          <span>Sign Up To Bahari Dishes</span>
+                        </div>
+                        <div class="top">
+                          <span>Got an account already? <a class="hover-underline" href="#" onclick="login()">Login</a></span>
+                        </div>
+                        <form action="connect.php" method="POST">
+                          <div class="two-forms">
+                            <div class="input-box">
+                              <input type="text" class="input-field" placeholder="Firstname" name="Firstname" id="Fistname">
+                              <i class="bx bx-user"></i>
+                            </div>
+                            <div class="input-box">
+                              <input type="text" class="input-field" placeholder="Username" name="Username" id="Username">
+                              <i class="bx bx-user"></i>
+                            </div>
+                          </div>
+                          <div class="input-box">
+                            <input type="text" class="input-field" placeholder="Email" name="Email" id="Email">
+                            <i class="bx bx-envelope"></i>
+                          </div>
+                          <div class="input-box">
+                            <input type="password" class="input-field" placeholder="Password" name="Password" id="Password">
+                            <i class="bx bx-lock-alt"></i>
+                          </div>
+                          <div class="input-box">
+                            <input type="submit" class="submit get" value="Register" name="Submit" id="Submit">
+                          </div>
+                        </form>
+                        <div class="two-col">
+                          <div class="hover-underline">
+                            <label><a href="#">Terms & conditions</a></label>
+                          </div>
+                        </div>
+                      
+                    </div>                    
+              </div>
+          </div>
+    </article>
+    
+ 
+          
+        
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-1.jpg" width="1880" height="950" alt="" class="img-cover-1">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal"></p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              For the love of <br>
+              delicious food
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              The Choice Is Easy When It's Real Food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-2.jpg" width="1880" height="950" alt="" class="img-cover-1">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal"></p>
+
+            <h1 class="display-2 hero-title slider-reveal">
+              Flavors Inspired by <br>
+              the Seasons
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              The Choice Is Easy When It's Real Food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-3.jpg" width="1880" height="950" alt="" class="img-cover-1">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal"></p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Where every flavor <br>
+              tells a story
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              The Choice Is Easy When It's Real Food
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">View Our Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View Our Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#reservation" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Book A Table</span>
+        </a>
+
+      </section>
+
+
+    
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Our Story</p>
+
+            <h2 class="headline-1 section-title">Every Flavor Tells a Story</h2>
+
+            <p class="section-text">
+              At Bahari Dishes, we believe the best dishes are the ones that remind you of childhood. 
+              A portion of great food should make you feel like you are wrapped in a warm blanket.
+              Here you will find the best dishes you didn't know you craved: 
+              extra-creamy mac and cheese, hot chicken casserole, fried dumplings like your mama makes, and many more.
+              Forget about the daily stress and come relax with us. After tasting any of our menu items, you will never want to leave!" 
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+254715151515</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-ban.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Special Selection</p>
+
+          <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/Kachumbari-Salad.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kachumbari-Salad </a>
+                    </h3>
+
+                    <span class="badge label-1">Veggie</span>
+
+                    <span class="span title-2">KSh250</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Finely Cut Juliennes Of Onions, De-Seeded Tomatoes, Gree Capsicum Washed In Fresh Lemon Juice And Served On A Bed Of Fresh Garden Lettuce
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/githeri.png" width="100" height="100" loading="lazy" alt="Lasagne"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Githeri</a>
+                    </h3>
+                    <span class="badge label-1">Veggie</span>
+
+                    <span class="span title-2">kSh150</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Fresh White Corn, Bambaranuts & Groundnuts
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/biryani.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Biryani Ya Kuku</a>
+                    </h3>
+                    <span class="badge label-1">Poultry</span>
+
+                    <span class="span title-2">KSh300</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Adored Rice(Wali) Served With Chicken In A Thick Sauce Of Swahili Spices, Yorgurt And Cream; Served With Kachumbari Salad
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/samaki.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Tilapia</a>
+                    </h3>
+
+                    <span class="badge label-1">Fish</span>
+
+                    <span class="span title-2">KSh390</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Steamed In A Rich Tasty Sauce Of Tomatoes, Onions And Garlic; Garnished With Fresh Coriander
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/beef.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Smoked Beef</a>
+                    </h3>
+                    <span class="badge label-1">Beef</span>
+
+                    <span class="span title-2">KSh500</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Smoked Fillet Steak Steamed,Stewed In A Tasty Peanut Sauce.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/opu.png" width="100" height="100" loading="lazy" alt="Opu Fish"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Opu Fish</a>
+                    </h3>
+                    <span class="badge label-1">Veggie</span>
+
+                    <span class="span title-2">KSh1200</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+<!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Ever since I discovered Bahari Dishes, my taste buds have been doing a happy dance! 
+            Thank you, Bahari Dishes, for turning my meals into a hilarious battle between my appetite and my belt
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/black.jpg" width="100" height="100" loading="lazy" alt="Sam Jhonson"
+              class="img">
+
+            <p class="label-2 profile-name">Black OG</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+              
+
+              <h2 class="headline-1 text-center">Contact Us</h2>
+
+              <p class="contact-label">Booking Request</p>
+
+              <a href="tel:+254715151515" class="body-1 contact-number hover-underline">+254715151515</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Location</p>
+
+              <address class="body-4">
+                Restaurant Kisumu City,  <br>
+                2738-40100, Kenya
+              </address>
+
+              <p class="contact-label">Lunch Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                11.00 am - 2.30pm
+              </p>
+
+              <p class="contact-label">Dinner Time</p>
+
+              <p class="body-4">
+                Monday to Sunday <br>
+                05.00 pm - 10.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ORDER
+      -->
+
+      <section class="orderr" id="orderr">
+        <div class="container">
+
+          <div class="form orderr-form bg-black-10">
+
+            <form action="connect.php" method="post" class="form-left">
+
+              <h2 class="headline-1 text-center"> Make An Order</h2>
+
+              
+
+              <div class="input-wrapper">
+                <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" id="phone" placeholder="Phone Number" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+              
+
+                <div class="icon-wrapper">
+                
+                  <ion-icon name="pizza-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="food" id="food" class="input-field">
+                    <option value="1-food">Kachumbari Salad</option>
+                    <option value="2-food">Githeri</option>
+                    <option value="3-food">Biriyani Ya Kuku</option>
+                    <option value="4-food">Tilapia</option>
+                    <option value="5-food">Smoked Beef</option>
+                    <option value="6-food">Opu Fish</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+
+                  <input type="number" name="quantity" id="quantity" class="input-field">
+
+                
+                </div>
+
+                
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="orderr-date" id="orderr-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="time" id="time" class="input-field">
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+              <textarea name="message" placeholder="Message" autocomplete="off" id="message" class="input-field"></textarea>
+
+              
+
+              <button onclick="orderreceipt()" type="submit" class="btn btn-secondary" name="Submit" id="Submit" value="Submit">
+                <span class="text text-1">Order</span>
+
+                <span class="text text-2" aria-hidden="true">Order</span>
+              </button>
+
+              
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="contact-label"></h2> <br>
+              <h2 class="contact-label"> OUR PAYMENT POLICY</h2> <br>
+
+              <p class="form-text text-center">
+                We kindly request that payments 
+                       
+              </p>
+              <p class="form-text text-center">  
+                be made upon the delivery     
+                  
+              </p>
+              <p class="form-text text-center">     
+                of your order for a seamless and 
+                 
+              </p>
+              <p class="form-text text-center">     
+                efficient transaction process.   
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="Bahari Dishes">
+          </a>
+
+          <address class="body-4">
+            Restaurant Kisumu City, 2738-40100, Kenya
+
+          </address>
+
+          <a href="mailto:support@bahari.co.ke" class="body-4 contact-link">support@bahari.co.ke</a>
+
+          <a href="tel:++254715151515" class="body-4 contact-link">Booking Request : ++254715151515</a>
+
+          <p class="body-4">
+            Open : 06:00 am - 12:00 am
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get News & Offers</p>
+
+          <p class="label-1">
+            Subscribe us & Get <span class="span">25% Off.</span>
+          </p>
+
+          <form action="./assets/connect.php" method="post"  class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Your email" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary" name="Submit">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menus</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Twitter</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Youtube</a>
+          </li>
+
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2024 Bahari Dishes. All Rights Reserved
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>   
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
